@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.bg-purple{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,14,142,1) 48%, rgba(123,0,147,1) 100%); 
+}
+.header-style{
+  width: 100%;
+}
