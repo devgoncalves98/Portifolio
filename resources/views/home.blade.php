@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <title>Portifolio</title>
-</head>
-
-<body class="bg-dark">
-  <!-- PARTE DA NAVBAR-->
-  <div class="bg-purple header-style">
-    <div class="row align-items-center text-lg-center">
-      <div class="col">
-        <h5 class=" text-light">MEU PORTIFÓLIO WEB</h5>
-      </div>
-    </div>
-  </div>
+@extends('layouts.main')
+@section('title','home')
+@section('content')
   <!-- PARTE DOS CARDS-->
   <div class="container-lg bg-dark">
     <h3 class=" text-lg-center text-light">MEUS CONHECIMENTOS:</h3>
     <div class="row align-content-md-center">
-      <div class="col-lg d-md-flex justify-content-lg-center bg-dark">
+      <div class="col-lg d-md-flex justify-content-around bg-dark">
         <div class="card text-center border-danger" style="width: 18rem;">
           <img src="/img/laravel.jpg" class="card-img-top" alt="Laravel">
           <div class="card-body bg-dark">
@@ -35,6 +17,19 @@
             </div>
             <p></p>
             <a href="#" class="btn btn-primary">Ver Projetos</a>
+          </div>
+        </div>
+        <div class="card text-center border-danger" style="width: 18rem;">
+          <img src="/img/laravel.jpg" class="card-img-top" alt="Laravel">
+          <div class="card-body bg-dark">
+            <h5 class="card-title text-light">Make excelent forms</h5>
+            <p class="card-text text-light">Sei como produzir e melhroar formularios e registro para empresas que necessitam</p>
+            <p class="card-text text-light">Progresso</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="60" aria-valuemax="100"></div>
+            </div>
+            <p></p>
+            <a href="./form" class="btn btn-primary">Ver Projetos</a>
           </div>
         </div>
       </div>
@@ -71,22 +66,5 @@
       </div>
     </div>
   </div>
-  <!-- PARTE DO RODAPÉ-->
-  <div class="bg-purple mt-5">
-    <footer class="footer">
-      <div class="row">
-        <div class="col">
-          <h5 class="card-text text-light text-center">BOM DIA</h5>
-        </div>
-        <div class="col">
-          <h5 class="card-text text-light text-center">BOM DIA</h5>
-        </div>
-        <div class="col">
-          <h5 class="card-text text-light text-center">BOM DIA</h5>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
 
-</html>
+@endsection
